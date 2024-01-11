@@ -1,10 +1,10 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ---- echo = FALSE, results = "asis"------------------------------------------
+## ----echo = FALSE, results = "asis"-------------------------------------------
 rox <- r"--[
 #' Fibonacci function 
 #' 
@@ -32,13 +32,13 @@ fib <- function (n) {
 ]--"
 cat(rox)
 
-## ---- echo = FALSE, warning = FALSE, comment=""-------------------------------
+## ----echo = FALSE, warning = FALSE, comment=""--------------------------------
 library(doctest)
 library(roxygen2)
 results <- roc_proc_text(dt_roclet(), rox)
 roclet_output(dt_roclet(), results)
 
-## ---- echo = FALSE, warning = FALSE, comment=""-------------------------------
+## ----echo = FALSE, warning = FALSE, comment=""--------------------------------
 results <- roc_proc_text(rd_roclet(), rox)
 text <- format(results[[1]])
 cat(gsub(".*\\\\examples", "\\\\examples", text))

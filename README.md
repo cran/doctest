@@ -10,6 +10,9 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Codecov test
 coverage](https://codecov.io/gh/hughjonesd/doctest/branch/master/graph/badge.svg)](https://app.codecov.io/gh/hughjonesd/doctest?branch=master)
+![runiverse-package
+badge](https://hughjonesd.r-universe.dev/badges/doctest) [![CRAN
+status](https://www.r-pkg.org/badges/version/doctest)](https://CRAN.R-project.org/package=doctest)
 <!-- badges: end -->
 
 Documentation examples and tests are similar in some ways:
@@ -95,7 +98,21 @@ The .Rd file will be created as normal, with an example section like:
 
 ## Usage
 
-You can install the development version of doctest like this:
+Install doctest from
+[r-universe](https://r-universe.dev):
+
+``` r
+install.packages("doctest", repos = c("https://hughjonesd.r-universe.dev", 
+                                      "https://cloud.r-project.org"))
+```
+
+Or from CRAN:
+
+``` r
+install.packages("doctest")
+```
+
+Or get the development version:
 
 ``` r
 devtools::install("hughjonesd/doctest")

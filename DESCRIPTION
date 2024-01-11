@@ -1,7 +1,7 @@
 Package: doctest
 Type: Package
 Title: Generate Tests from Examples Using 'roxygen' and 'testthat'
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: person("David", "Hugh-Jones",
                           email = "davidhughjones@gmail.com",
                           role = c("aut", "cre"))
@@ -17,7 +17,7 @@ URL: https://hughjonesd.github.io/doctest/
 BugReports: https://github.com/hughjonesd/doctest/issues
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2023-04-27 12:41:54 UTC; david
+Packaged: 2024-01-11 21:54:34 UTC; davidhugh-jones
 Author: David Hugh-Jones [aut, cre]
 Repository: CRAN
-Date/Publication: 2023-04-28 17:50:05 UTC
+Date/Publication: 2024-01-11 22:10:02 UTC
